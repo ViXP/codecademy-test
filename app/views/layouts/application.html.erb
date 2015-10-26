@@ -8,9 +8,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<nav>
+  <div id="button">
+    &nbsp;
+  </div>
+  <div id="menu">
+        <ul>
+          <li><%= link_to "Home", :pages %>
+          <li><%= link_to "Learn more", :about %>
+        </ul>
+    </div>  
+</nav>
 	<%= yield %>
-
+<footer>
+  My awesome project &copy;
+</footer>
+  
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 </body>
