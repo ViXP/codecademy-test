@@ -1,0 +1,71 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+  font: 16px 'Oswald', Verdana;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+	height: 100%;
+	& #menu {
+		left: -250px;
+		top: 0;
+		height: 100%;
+		background: #000000;
+		width: 250px;
+		position: fixed;
+    & a {
+    	text-decoration: none;
+      font-size: 20px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+	}
+	& #button {
+		top: 20px;
+		left: 20px;
+		position: fixed;
+		width: 30px;
+		height: 30px;
+		background: url('https://s3.amazonaws.com/codecademy-content/projects/z2d/stories/menu-black.svg')top left no-repeat;
+		background-size: 100%;
+		&.close {
+			background: url('https://s3.amazonaws.com/codecademy-content/projects/z2d/stories/close-black.svg') top left no-repeat;
+		}
+	}
+}
+
+main, section {
+	height: 200px;
+	width: 100%;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #000000;
+	text-align: center;
+	padding-top: 150px;
+	line-height: 60px;
+}
+
+main {
+	background: #000000 url('https://img08.deviantart.net/e7dc/i/2011/142/a/d/hungarian_skies_pt_lxxvi____wp_by_realitydream-d3gxxqs.jpg') top center no-repeat;
+  background-size: 100%;
+}
+
+section.secondary {
+	background: #000000 url('https://img07.deviantart.net/1e49/i/2010/324/2/e/hungarian_skies_pt_xxii____wp_by_realitydream-d338j14.jpg') top center no-repeat;
+  background-size: 100%;
+}
+
+footer {
+	text-align: center;
+  color: #222222;
+  background: #00eeee;
+  height: 50px;
+  padding-top: 20px;
+  width: 100%;
+}
