@@ -5,7 +5,7 @@ class SignupsController < ApplicationController
   end
   
   def create
-    if @signup.save(signup_params) then redirect_to :pages end
+    if @signup.save(signup_params) then redirect_to :thanks end
   end
   
   private
