@@ -5,6 +5,7 @@ class SignupsController < ApplicationController
   end
   
   def create
+    @signup.update(signup_params)
     if @signup.save(signup_params) then redirect_to :thanks end
   end
   
