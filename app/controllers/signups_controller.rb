@@ -5,12 +5,8 @@ class SignupsController < ApplicationController
   end
   
   def create
-<<<<<<< HEAD
     @signup.update(signup_params)
     if @signup.save(signup_params) then redirect_to :thanks end
-=======
-    if @signup.save(signup_params) then redirect_to :pages end
->>>>>>> 8d3df5a2d08a9faa1af650659c3b248f7ac62834
   end
   
   private
