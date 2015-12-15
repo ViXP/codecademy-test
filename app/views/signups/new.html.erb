@@ -1,0 +1,26 @@
+
+<main>
+  <header>
+		Signup yourself 
+  </header>
+</main>
+<section class="supporting">
+  <header>
+    Do you want to get information from us?
+  </header>
+</section>
+<section class="secondary">	
+</section>
+<section class="discover">
+  <header>
+    <%= form_for @signup do |form| %>    
+   	  <%= form.label :firstname %>
+   	  <%= form.text_field :firstname %>
+    	<br />
+    	<%= form.label :email %>
+   		<%= form.text_field :email %>
+    	<br />
+    <%= form.submit %>
+    <% end %><br />
+  </header>
+</section>
